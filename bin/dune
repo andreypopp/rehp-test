@@ -1,0 +1,16 @@
+(executable
+  (name rehp_test)
+)
+
+(rule
+  (targets rehp_test.bc.php)
+  (deps (:in rehp_test.bc))
+  (action (run
+            %{bin:js_of_ocaml}
+            --backend php
+            --enable excwrap
+            --enable wrapped-exceptions
+            -o %{targets}
+            %{in}
+            ))
+  )

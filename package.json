@@ -1,0 +1,16 @@
+{
+  "name": "rehp-project",
+  "esy": {
+    "build": "dune build -p #{self.name}"
+  },
+  "resolutions": {
+    "@opam/js_of_ocaml": "jordwalke/rehp:js_of_ocaml.opam#f65bbc",
+    "@opam/js_of_ocaml-compiler": "jordwalke/rehp:js_of_ocaml-compiler.opam#f65bbc"
+  },
+  "dependencies": {
+    "@opam/js_of_ocaml": "*",
+    "@opam/js_of_ocaml-compiler": "*",
+    "@opam/dune": "*",
+    "ocaml": "~4.6.0"
+  }
+}
